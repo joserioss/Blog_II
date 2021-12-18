@@ -1,7 +1,7 @@
 class Blog < ApplicationRecord
-    has_many :post, depends: :destroy
+    has_many :post, dependent: :destroy
     has_many :posts, dependent: :destroy
-    
+
     validates :name, :description, presence: true
 
     # esta callback se ejecutará después de crear un nuevo usuario

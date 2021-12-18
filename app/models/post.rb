@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  has_many :messages, depends: :destroy
+  has_many :messages, dependent: :destroy
   belongs_to :user
   belongs_to :blog
 
