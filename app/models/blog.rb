@@ -1,5 +1,5 @@
 class Blog < ApplicationRecord
-    has_many :post, dependent: :destroy
+    has_many :owners, dependent: :destroy
     has_many :posts, dependent: :destroy
 
     validates :name, :description, presence: true
