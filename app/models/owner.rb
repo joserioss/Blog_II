@@ -15,4 +15,5 @@ class Owner < ApplicationRecord
   def actualizacion_exitosa
     puts "Asociacion de blog a usuario actualizada con exito."
   end
+  # funciones ok
 end
